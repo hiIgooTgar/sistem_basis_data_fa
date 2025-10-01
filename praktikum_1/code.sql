@@ -14,6 +14,13 @@ CREATE TABLE mahasiswa (
     alamat varchar(255)
 );
 
+CREATE TABLE dosen (
+    nip char(10),
+    nama varchar(255),
+    gelar varchar(255),
+    alamat varchar(255)
+)
+
 CREATE TABLE matakuliah (
     nama_matakuliah varchar(255),
     sks int,
@@ -29,6 +36,16 @@ INSERT INTO mahasiswa VALUES
 ('24SA11A700','Rahmat Wibowo','Sistem Informasi','Kebumen');
 
 SELECT * FROM mahasiswa;
+
+
+INSERT INTO dosen VALUES 
+('154A71B1','Dr Rifzani Pamungkas M.Kom.','Sarjana, Magister, Doktor','Purbalingga'),
+('156A12A7','Indah Yuyun M.Kom.','Sarjana, Magister','Banyumas'),
+('157A22E9','Trent Xander Purnomo M.Kom.','Sarjana, Magister','Banjarnegara'),
+('158A22D1','Dr Sarah Klarisa M.M.','Sarjana, Magister, Doktor','Banjarnegara'),
+('159A92C2','Lukman Gunawan M.Kom.','Sarjana, Magister','Banyumas');
+
+SELECT * FROM dosen;
 
 
 INSERT INTO matakuliah VALUES
